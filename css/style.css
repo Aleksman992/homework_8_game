@@ -1,0 +1,241 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+body{
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.6;
+}
+.wrapper {
+  background: url(../img/luchshie-plyazhi-dubaya.jpg)0 0/100% 100% no-repeat ;
+}
+.wrapper img{
+  max-width: 100%;
+}
+.game-body:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.game-body:target .game {
+  display: none;
+}
+
+.game-button {
+  text-align: center;
+}
+
+.game-button *:not(:last-child) {
+  margin-right: 50px;
+}
+
+.game-link {
+  display: inline-block;
+  background-color: yellowgreen;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.game-link:hover {
+  background-color: plum;
+  box-shadow: 0px 0px 5px 2px rgb(0, 0, 0);
+}
+
+.game-link:active {
+  background-color: #fff;
+  color: red;
+  text-decoration: underline;
+}
+
+
+.game {
+  display: none;
+}
+
+.game-button:target {
+  margin-bottom: 50px;
+}
+
+.game-button:target~.game {
+  display: block;
+  min-height: 550px;
+}
+
+.game-button:target .game-link:hover {
+  background-color: red;
+}
+
+.game-button:target .game-link:active {
+  background-color: #fff;
+}
+
+.game-button:target [href*='start'],
+.game-body:target [href*='end'] {
+  background-color: #26a84d;
+}
+
+[class*='block-'] {
+  visibility: hidden;
+  opacity: 0;
+  background-color:rgb(233, 235, 10);
+  cursor: crosshair;
+  text-transform: uppercase;
+}
+
+[class*='block-']:hover,
+[class*='block-']:hover+* {
+  visibility: visible;
+  opacity: 1;
+}
+
+[class*='block-']:last-child {
+  background-color: red;
+}
+
+[class*='block-']:last-child:hover {
+  background-color: #000;
+  background: url(../img/15425303.jpg) center / cover no-repeat;
+  width: 100%;
+  min-height: 550px;
+  margin: -530px auto 0;
+}
+
+.game__block-one {
+  width: 50px;
+  height: 50px;
+  visibility: visible;
+  opacity: 1;
+  color: deeppink;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 50px;
+}
+
+.game__block-two {
+  width: 50px;
+  height: 50px;
+}
+
+.game__block-three {
+  height: 50px;
+  margin-right: 20%;
+  margin-top: -50px;
+}
+
+.game__block-four,
+.game__block-five,
+.game__block-six {
+  margin-left: auto;
+  margin-right: 20%;
+  background-color: rgb(233, 235, 10);
+}
+
+.game__block-four {
+  width: 40px;
+  height: 50px;
+  margin-top: -50px;
+}
+
+.game__block-five{
+  height: 200px;
+  width: 40px;
+  margin-top: -50px;
+}
+
+.game__block-six {
+  width: 40px;
+  height: 40px;
+  margin-top: -40px;
+  background-color:#f5c707 ;
+}
+
+.game__block-seven,
+.game__block-eight,
+.game__block-nine {
+  margin-left: 20%;
+  margin-top: -40px;
+}
+
+.game__block-seven {
+  height: 40px;
+  margin-right: 20%;
+  background-color:#f59f07 ;
+}
+
+.game__block-eight {
+  width: 30px;
+  height: 40px;
+  background-color:#eb9702 ;
+}
+
+.game__block-nine {
+  width: 30px;
+  height: 150px;
+  background-color: #eb9709;
+}
+
+.game__block-ten {
+  width: 30px;
+  height: 30px;
+  margin-left: 20%;
+  margin-top: -30px;
+  background-color: #ff8100;
+}
+
+.game__block-eleven {
+  height: 30px;
+  margin-left: 20%;
+  margin-right: 50%;
+  margin-top: -30px;
+  background-color:#ff7d00 ;
+}
+
+.game__block-twelve,
+.game__block-thirteen,
+.game__block-fourteen{
+  margin-left: auto;
+  margin-right: 50%;
+}
+
+.game__block-twelve {
+  width: 20px;
+  height: 30px;
+  margin-top: -30px;
+  background-color:#ff6700 ;
+}
+
+.game__block-thirteen {
+  width: 20px;
+  height: 200px;
+  margin-top: -30px;
+  background-color: #ff4d00 ;
+}
+
+.game__block-fourteen {
+  height: 20px;
+  width: 20px;
+}
+.footer {
+  text-align: center;
+  margin-top: 100px;
+}
+.footer a {
+  display: inline-block;
+  background-color: orangered;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  border: 3px red solid;
+}
+.footer a:hover {
+  color: #000;
+  text-decoration: underline;
+  box-shadow: 0px 0px 5px 2px rgb(0, 0, 0);
+}
+.footer a:active {
+  color: #000;
+  background-color: #fff;
+}
